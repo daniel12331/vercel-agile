@@ -2,8 +2,7 @@ import express from 'express';
 import User from '../users/userModel';
 import asyncHandler from 'express-async-handler';
 import jwt from 'jsonwebtoken';
-import movieModel from '../movies/movieModel';
-import { getMovie } from '../tmdb-api';
+
 
 
 
