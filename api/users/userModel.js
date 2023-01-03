@@ -11,7 +11,8 @@ function checkPassword(str)
 
   const UserSchema = new mongoose.Schema({
     username: { type: String, unique: true, required: true},
-    password: {type: String, required: true }
+    password: {type: String, required: true },
+    favourites: {type:Array}
   });
   
   UserSchema.statics.findByUserName = function (username) {
